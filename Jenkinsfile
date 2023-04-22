@@ -4,7 +4,7 @@ pipeline {
     environment {
         CLOUDSDK_CORE_DISABLE_PROMPTS = "1"
         PROJECT_ID = "multy-k8s-384507" 
-        CREDENTIALS_ID = "multi-k8s" 
+        CREDENTIALS_ID = "SERVICE_ACCOUNT_KEY" 
         AVAILABILITY_ZONE = "me-west1-a" 
         SHA = "${sh(script: 'git rev-parse HEAD', returnStdout: true).trim()}"
     }
