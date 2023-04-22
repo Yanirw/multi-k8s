@@ -5,7 +5,7 @@ pipeline {
         CLOUDSDK_CORE_DISABLE_PROMPTS = "1"
         PROJECT_ID = "multy-k8s-384507" // Replace with your GCP project ID
         CREDENTIALS_ID = "gcp-service-account-key" // Replace with the ID of your GCP service account credentials stored in Jenkins
-        AVAILABILITY_ZONE = "me-west1" // Replace with the cluster AZ
+        AVAILABILITY_ZONE = "me-west1-a" // Replace with the cluster AZ
         SHA = "${sh(script: 'git rev-parse HEAD', returnStdout: true).trim()}"
     }
 
@@ -56,3 +56,4 @@ pipeline {
             }
         }
     }
+}    
