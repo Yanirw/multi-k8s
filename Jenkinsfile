@@ -13,7 +13,8 @@ pipeline {
         stage("Configure SDK with account auth info") {
             steps {
                 withCredentials([file(credentialsId: 'SERVICE_ACCOUNT_KEY', variable: 'SERVICE_ACCOUNT_KEY')]){
-                    sh "gcloud auth activate-service-account --key-file=<(echo '$SERVICE_ACCOUNT_KEY')"
+                    sh "bash -c 'gcloud auth activate-service-account --key-file=<(echo \"$SERVICE_ACCOUNT_KEY\")'"
+
                 }
                 sh "gcloud config set project ${env.PROJECT_ID}"
                 sh "gcloud config set compute/zone ${AVAILABILITY_ZONE}"
