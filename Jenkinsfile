@@ -9,6 +9,18 @@ pipeline {
         SHA = "${sh(script: 'git rev-parse HEAD', returnStdout: true).trim()}"
     }
 
+    stage('Install Google Cloud SDK') {
+        steps {
+            sh '''
+                curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-367.0.0-linux-x86_64.tar.gz
+                tar zxvf google-cloud-sdk-427.0.0-linux-x86_64.tar.gz
+                ./google-cloud-sdk/install.sh --quiet
+                source ./google-cloud-sdk/path.bash.inc
+            '''
+        }
+    }
+
+
     stages {
         stage("Configure SDK with account auth info") {
             steps {
