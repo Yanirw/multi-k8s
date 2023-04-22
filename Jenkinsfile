@@ -21,7 +21,7 @@ pipeline {
             }
                 sh "gcloud config set project ${env.PROJECT_ID}"
                 sh "gcloud config set compute/zone ${AVAILABILITY_ZONE}"
-                sh "gcloud container clusters get-credentials multi-cluster"
+                sh "gcloud container clusters get-credentials multi-cluster --zone me-west1"
             }
         }
 
