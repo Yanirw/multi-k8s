@@ -46,9 +46,7 @@ pipeline {
         }
 
         stage('Deploy New Images and Apply Configs') {
-            when {
-                branch 'main'
-            }
+            
             steps {
                 sh '''
                     # Run the deploy.sh script
