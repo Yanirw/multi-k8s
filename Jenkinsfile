@@ -46,7 +46,9 @@ pipeline {
         }
 
         stage('Deploy New Images and Apply Configs') {
-            
+            when {
+                changeRequest target: 'main'
+            }    
             steps {
                 sh '''
                     # Run the deploy.sh script
