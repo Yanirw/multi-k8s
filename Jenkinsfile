@@ -29,7 +29,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'DOCKER_PASSWORD', usernameVariable: 'DOCKER_USERNAME')]) {
                     sh """
-                         echo "${DOCKER_PASSWORD}" | docker login -u "${DOCKER_USERNAME}" --password-stdin
+                         echo "${DOCKER_PASSWORD}" | sudo docker login -u "${DOCKER_USERNAME}" --password-stdin
                      """
                 }
             }
@@ -39,8 +39,8 @@ pipeline {
         stage("Build and test multi client image") {
             steps {
                 sh """
-                    docker build -t yanirdocker/react-test -f ./client/Dockerfile.dev ./client;
-                    docker run yanirdocker/react-test npm test -- --coverage
+                    sudo docker build -t yanirdocker/react-test -f ./client/Dockerfile.dev ./client;
+                    sudo docker run yanirdocker/react-test npm test -- --coverage
                 """
             }
         }
