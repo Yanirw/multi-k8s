@@ -1,4 +1,4 @@
-aviVersion: extensions/v1beta1
+apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: ingress-service
@@ -9,11 +9,11 @@ spec:
   rules:
     - http:
         paths:
-        - path: /
-          backend:
-            serviceName: client-cluster-ip-service
-            servicePort: 3000
-        - path: /api/
-          backend:
-            serviceName: server-cluster-ip-service
-            servicePort: 5000
+          - path: /
+            backend:
+              serviceName: client-cluster-ip-service
+              servicePort: 3000
+          - path: /api/
+            backend:
+              serviceName: server-cluster-ip-service
+              servicePort: 5000
