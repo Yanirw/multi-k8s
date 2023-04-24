@@ -10,7 +10,6 @@ docker push yanirdocker/multi-client:$SHA
 docker push yanirdocker/multi-server:$SHA 
 docker push yanirdocker/multi-worker:$SHA 
 
-
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=yanirdocker/multi-server:$SHA
 kubectl set image deployments/client-deployment client=yanirdocker/multi-client:$SHA
