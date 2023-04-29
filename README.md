@@ -26,8 +26,10 @@ The final output of this project is a running multi-container application orches
  Users can access the app by visiting the external IP address of the Ingress service.
  
  ## Application Architecture
+ 
+![Screenshot 2023-04-29 at 19 19 39](https://user-images.githubusercontent.com/117165801/235312886-695a75c0-88f0-4d29-9146-02194375697e.png)
 
-![Screenshot 2023-04-29 at 1 22 11](https://user-images.githubusercontent.com/117165801/235263615-57d471d6-d218-409b-88e5-b2b396f96058.png)
+
 
 #### The Fibonacci index calculator is a multi-container application with a microservices architecture, composed of the following components:
 
@@ -59,8 +61,8 @@ The final output of this project is a running multi-container application orches
 7. The multi-container application is now accessible to users via the Ingress service in the GKE cluster, which routes incoming traffic to the client and server components based on the specified paths.
 Users can access the application by visiting the external IP address of the Ingress service.
 
-![Screenshot 2023-04-29 at 18 21 37](https://user-images.githubusercontent.com/117165801/235310387-f5af753a-fab5-4735-9a31-4178ae0352b9.png)
 
+![Screenshot 2023-04-29 at 19 20 55](https://user-images.githubusercontent.com/117165801/235312924-a4ee7d91-5854-4d7e-a276-001f18a9f8ec.png)
 
 
 
