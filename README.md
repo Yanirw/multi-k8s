@@ -61,8 +61,8 @@ The final output of this project is a running multi-container application orches
 7. The multi-container application is now accessible to users via the Ingress service in the GKE cluster, which routes incoming traffic to the client and server components based on the specified paths.
 Users can access the application by visiting the external IP address of the Ingress service.
 
+![Screenshot 2023-04-29 at 19 27 01](https://user-images.githubusercontent.com/117165801/235313221-c700ccfb-edd7-4a05-bb5d-1a2da6366c31.png)
 
-![Screenshot 2023-04-29 at 19 20 55](https://user-images.githubusercontent.com/117165801/235312924-a4ee7d91-5854-4d7e-a276-001f18a9f8ec.png)
 
 
 
