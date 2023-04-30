@@ -2,21 +2,7 @@
 
 ### Introduction
 
-This project demonstrates the process of deploying a multi-container Fibonacci index calculator application using Google Kubernetes Engine (GKE) for container orchestration, Jenkins for CI/CD, and Docker for containerization. The application follows a microservices architecture, with each component containerized using Docker. The Fibonacci index calculator was chosen for its simplicity, allowing the project to focus on showcasing the effective implementation of this architecture and the CI/CD process.
-
-### Prerequisites
-
-1. **Google Cloud Platform (GCP) account** 
-
-2. **GKE Cluster:** Create a GKE cluster in the GCP console
-
-3. **Docker**
-
-4. **Jenkins Server** Ensure that the Google Kubernetes Engine plugin is installed and configured, and all the secrets and credentials are configured.
-
-5. **kubectl** 
-
-6. **Docker Hub account** 
+This project demonstrates the process of deploying a multi-container Fibonacci index calculator application, built with React for the frontend and Node.js for the backend. The app is deployed using Google Kubernetes Engine (GKE) for container orchestration, Jenkins for CI/CD, and Docker for containerization. The application follows a microservices architecture, with each component containerized using Docker. The simplicity of the Fibonacci index calculator allows the project to focus on showcasing the effective implementation of this architecture and the CI/CD process.
 
 
 ### Final Output
