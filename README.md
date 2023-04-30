@@ -23,9 +23,10 @@ This project demonstrates the process of deploying a multi-container Fibonacci i
 
 The final output of this project is a running multi-container application orchestrated by GKE, featuring automated building, testing, and deployment using Jenkins.
 
-![Screenshot 2023-04-30 at 10 38 37](https://user-images.githubusercontent.com/117165801/235341588-51ae2209-554b-418f-a5d3-0a5eef19c5f7.png)
+![Screenshot 2023-04-30 at 11 17 38](https://user-images.githubusercontent.com/117165801/235343055-5618253a-0f7a-470d-941f-910a30c62e48.png)
 
 Users can access the app by visiting the external IP address of the Ingress service.
+
 
  
  ## Application Architecture
